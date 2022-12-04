@@ -25,11 +25,25 @@
 // 70 === 01:10
 
 
-const totalMinuts = 69;
-let hours = Math.floor(totalMinuts / 60);
-let minutes = totalMinuts % 60;
-hours = String(hours).padStart(2, '0');
-minutes= String(minutes).padStart(2, '0');
+// const totalMinuts = 69;
+// let hours = Math.floor(totalMinuts / 60);
+// let minutes = totalMinuts % 60;
+// hours = String(hours).padStart(2, '0');
+// minutes= String(minutes).padStart(2, '0');
 
-console.log(`${hours}:${minutes}`);
+// console.log(`${hours}:${minutes}`);
 
+
+
+//3. Напишите цикл, который выводит в консоль
+//числа от max до min по убыванию
+// Выведите в консоль всех четных чисел от min до max
+
+const max = 50;
+const min = 23;
+for(let i=max; i>=min; i-=1){
+    if(i%2!==0){
+       continue; 
+    } 
+    console.log(i)
+}
